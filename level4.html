@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المستوى الرابع | IT LIBRARY</title>
+
+    <title>الفصل الدراسي الأول | IT LIBRARY</title>
+
     <link rel="stylesheet" href="style.css">
 
     <style>
+        .breadcrumb {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 15px 20px;
+            background: #f4f7fb;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            color: #64748b;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #17365d;
+            font-weight: bold;
+        }
+
+        .breadcrumb a:hover {
+            color: #2563eb;
+        }
+
+        .breadcrumb .current {
+            color: #64748b;
+            font-weight: bold;
+        }
+
         .subject-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -31,10 +62,23 @@
             justify-content: center;
             direction: ltr;
             font-size: 18px;
+            text-align: center;
         }
 
         .subject-card p {
             min-height: 30px;
+        }
+
+        .site-footer {
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 40px;
+            background: #102a43;
+            color: white;
+        }
+
+        .site-footer p {
+            margin: 7px 0;
         }
 
         @media (max-width: 600px) {
@@ -47,61 +91,92 @@
 
 <body>
 
-<header>
-    <div class="logo">IT LIBRARY</div>
-    <nav>
-        <a href="index.html">الرئيسية</a>
+    <header>
+        <div class="logo">IT LIBRARY 📚</div>
+
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="year4.html">السنة الرابعة</a>
+        </nav>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="index.html">🏠 الرئيسية</a>
+        <span>←</span>
+        <a href="year4.html">السنة الرابعة</a>
+        <span>←</span>
+        <span class="current">الفصل الدراسي الأول</span>
     </nav>
-</header>
 
-<section class="hero">
-    <h1>المستوى الرابع</h1>
-    <p>المكتبة الأكاديمية لطلاب تقنية المعلومات</p>
-</section>
+    <section class="hero">
+        <h1>الفصل الدراسي الأول</h1>
+        <p>المواد الدراسية والمحاضرات والملخصات</p>
+    </section>
 
-<section class="levels">
-    <h2>المواد الدراسية</h2>
+    <section class="levels">
 
-    <div class="subject-grid">
+        <h2>المواد الدراسية</h2>
 
-        <div class="card subject-card">
-            <h3>Multimedia</h3>
-            <p>الوسائط المتعددة</p>
-            <a href="https://drive.google.com/drive/folders/1cuY5hKJcK_T037aHAWMJF0BPvEIMBi5Z?usp=drive_link" target="_blank"><button>عرض الملفات</button></a>
+        <div class="subject-grid">
+
+            <div class="card subject-card">
+                <h3>Multimedia</h3>
+                <p>الوسائط المتعددة</p>
+                <a href="https://drive.google.com/drive/folders/1cuY5hKJcK_T037aHAWMJF0BPvEIMBi5Z?usp=drive_link" target="_blank">
+                    <button>عرض الملفات</button>
+                </a>
+            </div>
+
+            <div class="card subject-card">
+                <h3>Neural Networks</h3>
+                <p>الشبكات العصبية</p>
+                <a href="https://drive.google.com/drive/folders/1ikJ-Eg-L2isHrjF2HC_GkUx08RlZoD31?usp=drive_link" target="_blank">
+                    <button>عرض الملفات</button>
+                </a>
+            </div>
+
+            <div class="card subject-card">
+                <h3>Programming Languages & Compiler</h3>
+                <p>لغات البرمجة والمترجمات</p>
+                <a href="https://drive.google.com/drive/folders/18VJsMvSvzSrqheIZzn6cmGQzCOjeSsBG?usp=drive_link" target="_blank">
+                    <button>عرض الملفات</button>
+                </a>
+            </div>
+
+            <div class="card subject-card">
+                <h3>Information Systems Design</h3>
+                <p>تصميم نظم المعلومات</p>
+                <a href="https://drive.google.com/drive/folders/1MtzXI4cC4NuS7VaOWT0GnxqaKFnsNPx0?usp=drive_link" target="_blank">
+                    <button>عرض الملفات</button>
+                </a>
+            </div>
+
+            <div class="card subject-card">
+                <h3>Computer Graphics</h3>
+                <p>رسوميات الحاسوب</p>
+                <a href="https://drive.google.com/drive/folders/1UvtxAuNKhhuckV-buf2ymCjcdCbiuecC?usp=drive_link" target="_blank">
+                    <button>عرض الملفات</button>
+                </a>
+            </div>
+
+            <div class="card subject-card">
+                <h3>E-Commerce</h3>
+                <p>التجارة الإلكترونية</p>
+                <a href="https://drive.google.com/drive/folders/1DOyiCYefL3yMx38T3W4D7jNW3bG39vJn?usp=drive_link" target="_blank">
+                    <button>عرض الملفات</button>
+                </a>
+            </div>
+
         </div>
 
-        <div class="card subject-card">
-            <h3>Neural Networks</h3>
-            <p>الشبكات العصبية</p>
-            <a href="https://drive.google.com/drive/folders/1ikJ-Eg-L2isHrjF2HC_GkUx08RlZoD31?usp=drive_link" target="_blank"><button>عرض الملفات</button></a>
-        </div>
+    </section>
 
-        <div class="card subject-card">
-            <h3>Programming Languages & Compiler</h3>
-            <p>لغات البرمجة والمترجمات</p>
-            <a href="https://drive.google.com/drive/folders/18VJsMvSvzSrqheIZzn6cmGQzCOjeSsBG?usp=drive_link" target="_blank"><button>عرض الملفات</button></a>
-        </div>
-
-        <div class="card subject-card">
-            <h3>Information Systems Design</h3>
-            <p>تصميم نظم المعلومات</p>
-            <a href="https://drive.google.com/drive/folders/1MtzXI4cC4NuS7VaOWT0GnxqaKFnsNPx0?usp=drive_link" target="_blank"><button>عرض الملفات</button></a>
-        </div>
-
-        <div class="card subject-card">
-            <h3>Computer Graphics</h3>
-            <p>رسوميات الحاسوب</p>
-            <a href="https://drive.google.com/drive/folders/1UvtxAuNKhhuckV-buf2ymCjcdCbiuecC?usp=drive_link" target="_blank"><button>عرض الملفات</button></a>
-        </div>
-
-        <div class="card subject-card">
-            <h3>E-Commerce</h3>
-            <p>التجارة الإلكترونية</p>
-            <a href="https://drive.google.com/drive/folders/1DOyiCYefL3yMx38T3W4D7jNW3bG39vJn?usp=drive_link" target="_blank"><button>عرض الملفات</button></a>
-        </div>
-
-    </div>
-</section>
+    <footer class="site-footer">
+        <p>IT LIBRARY © 2026</p>
+        <p>تصميم وتطوير: سامح سعيد عبدالقوي</p>
+        <p>مؤسس ومطور المكتبة الأكاديمية</p>
+        <p>طالب تقنية المعلومات | IT</p>
+    </footer>
 
 </body>
 </html>
